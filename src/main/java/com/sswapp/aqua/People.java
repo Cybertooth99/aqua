@@ -22,13 +22,13 @@ public class People
         this.Age = Age;
         this.Place = Place;
     }
-//    public String getId() {
-//        return Id;
-//    }
-//
-//    public void setId(String Id) {
-//        this.Id = Id;
-//    }
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String Id) {
+        this.Id = Id;
+    }
 
     public String getName() {
         return name;
