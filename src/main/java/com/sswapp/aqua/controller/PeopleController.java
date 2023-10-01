@@ -1,9 +1,12 @@
-package com.sswapp.aqua;
+package com.sswapp.aqua.controller;
 
+import com.sswapp.aqua.service.PeopleService;
+import com.sswapp.aqua.entity.People;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/people")
@@ -17,9 +20,7 @@ public class PeopleController {
     }
 
     @GetMapping
-    public List<People> getAllPeople(@RequestParam(name = "Place", required = false) String place) throws Exception {
-        return peopleService.getAllPeople(place);
+    public List<People> getAllPeople(@RequestParam Map<String, String> params){
+        return peopleService.getAllPeople(params);
     }
-
-    // Add more endpoints as needed
 }

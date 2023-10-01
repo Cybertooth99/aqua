@@ -1,4 +1,4 @@
-package com.sswapp.aqua;
+package com.sswapp.aqua.util;
 
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.web.bind.annotation.*;
